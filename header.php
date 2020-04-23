@@ -22,7 +22,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="badges.html">Components</a></li>
+                <li><a href="registration.php">Registration</a></li>
                 <li><a href="about.php">About us</a></li>
                 <li><a href="contacts.php">Contact</a></li>
             </ul>
