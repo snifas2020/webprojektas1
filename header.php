@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +11,32 @@
     <link rel="stylesheet" href="styles/style.css">
 
 
-    <title>Projekto pavadinimas</title>
+    <title>webprojektas1</title>
 </head>
 
 <body>
+
+    <nav class="blue darken-3 container">
+        <div class="nav-wrapper text-blue-grey lighten-5">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="about.php">About us</a></li>
+                <li><a href="contacts.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="about.php">About us</a></li>
+        <li><a href="contacts.php">Contact</a></li>
+    </ul>
+
+
+
 
     <!-- Čia pasikartojanti visuose puslapiuose viršutinė dalis -->
