@@ -6,7 +6,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "webprojektas1";
+    $dbname = "projektas_1";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -20,6 +20,8 @@
     $result = $conn->query($sql);
 
     $kint = "";
+    
+echo $sql;
 
     if ($result->num_rows > 0) {
         // output data of each row
