@@ -18,7 +18,7 @@
 
     <nav class="cyan accent-4 container">
         <div class="nav-wrapper text-blue-grey lighten-5">
-            <a href="#">
+            <a href="index.php">
 					<img class="logo" src="images/logo.png">
 				</a>
             

@@ -43,6 +43,19 @@ footer.style{
     overflow: hidden;
 }
 
+.homeimg{
+    border-radius: 50%;
+}
+
+.center{
+    text-align: center;
+}
+
+.contactHeader{
+    color: black;
+    font-weight: bold;
+}
+
 /* JG css pradzia */ 
 
 

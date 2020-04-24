@@ -16,9 +16,9 @@
   </div>
 
 
-  <div class="col s4">
+  <div class="col s12 m6 l4 center">
     <h4>Java</h4>
-    <img class="responsive-img" src="https://picsum.photos/seed/1/2001/1000" alt="">
+    <img class="responsive-img homeimg" src="https://picsum.photos/seed/1/300/300" alt="">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed reiciendis illum culpa molestias, numquam ea, quod facere aut voluptatum tempore earum doloribus eius asperiores id modi maiores. Commodi, ea. Aperiam?</p>
     <a target="_blank" href="https://www.vilniuscoding.lt/">Need more details?</a>
     <br>
@@ -26,9 +26,9 @@
     <a href="registration.php">Register now!</a>
   </div>
 
-  <div class="col s4">
+  <div class="col s12 m6 l4 center">
     <h4>WEB</h4>
-    <img class="responsive-img" src="https://picsum.photos/seed/1/2001/1000" alt="">
+    <img class="responsive-img homeimg" src="https://picsum.photos/seed/2/300/300" alt="">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed reiciendis illum culpa molestias, numquam ea, quod facere aut voluptatum tempore earum doloribus eius asperiores id modi maiores. Commodi, ea. Aperiam?</p>
     <a target="_blank" href="https://www.vilniuscoding.lt/">Need more details?</a>
     <br>
@@ -36,9 +36,9 @@
     <a href="registration.php">Register now!</a>
   </div>
 
-  <div class="col s4">
+  <div class="col s12 m6 l4 center">
     <h4>C#</h4>
-    <img class="responsive-img" src="https://picsum.photos/seed/1/2001/1000" alt="">
+    <img class="responsive-img homeimg" src="https://picsum.photos/seed/3/300/300" alt="">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed reiciendis illum culpa molestias, numquam ea, quod facere aut voluptatum tempore earum doloribus eius asperiores id modi maiores. Commodi, ea. Aperiam?</p>
     <a target="_blank" href="https://www.vilniuscoding.lt/">Need more details?</a>
     <br>
