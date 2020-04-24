@@ -3,41 +3,57 @@
 <!-- JG chart kodo pradzia -->
 
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "projektas_1";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "projektas_1";
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT round(avg(java),0) as avgjava, round(avg(csharp),0 ) as avgcsharp, round(avg(html),0) as avghtml, round(avg(css),0) as avgcss, round(avg(javascript),0) as avgjavascript, round(avg(php),0) as avgphp FROM projektas_1.charts WHERE chartsCode = 1";
+
+$result = $conn->query($sql);
+
+$kint = "";
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+
+        $kint = $row['avgjava'] . "," . $row['avgcsharp'] . "," . $row['avghtml'] . "," . $row['avgcss'] . "," . $row['avgjavascript'] . "," . $row['avgphp'];
     }
+    //        echo $kint;
+} else {
+    echo "0 results";
+}
+// kiekio studentu suskaiciavimas:
 
-    $sql = "SELECT round(avg(java),0) as avgjava, round(avg(csharp),0 ) as avgcsharp, round(avg(html),0) as avghtml, round(avg(css),0) as avgcss, round(avg(javascript),0) as avgjavascript, round(avg(php),0) as avgphp FROM charts WHERE chartsCode = 1";
+$sql = "SELECT round(sum(java),0) as avgjava, round(sum(csharp),0 ) as avgcsharp, round(sum(html),0) as avghtml, round(sum(css),0) as avgcss, round(sum(javascript),0) as avgjavascript, round(sum(php),0) as avgphp FROM projektas_1.charts WHERE chartsCode = 1";
 
-    $result = $conn->query($sql);
+$result = $conn->query($sql);
 
-    $kint = "";
-    
-echo $sql;
+$kintCount = "";
 
-    if ($result->num_rows > 0) {
-        // output data of each row
-        while ($row = $result->fetch_assoc()) {
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
 
-            $kint = $row['avgjava'] . "," . $row['avgcsharp'] . "," . $row['avghtml'] . "," . $row['avgcss'] . "," . $row['avgjavascript'] . "," . $row['avgphp']; 
-
+        $kintCount = $row['avgjava'] . "," . $row['avgcsharp'] . "," . $row['avghtml'] . "," . $row['avgcss'] . "," . $row['avgjavascript'] . "," . $row['avgphp'];
     }
-//    echo $kint;
-    } else {
-        echo "0 results";
-    }
-    $conn->close();
-    ?>
+    //        echo $kint;
+} else {
+    echo "0 results";
+}
 
+$conn->close();
+?>
 
+<!-- Pabaigtas prisijungimas; -->
 
 
 <div class="aboutImgTop1">
@@ -84,56 +100,112 @@ echo $sql;
     </script>
 </div>
 
-<h2 class="abouth2">Students per year</h2>
+<div class="container">
 
-<div class="aboutCh2">
+    <div class="row">
+        <!-- Paskutiniu grafiku i viena eilute-->
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <div class="col s6">
 
-    <canvas id="myChart" width="200" height="100"></canvas>
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Java', 'C#', 'HTML', 'CSS', 'JavaScript', 'PHP'],
-                datasets: [{
-                    label: '2020 years students',
-                    data: [ <?php echo $kint; ?>],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
+            <h2 class="abouth2">Students avarage per year</h2> 
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+            <canvas id="myChart" width="200" height="100"></canvas>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Java', 'C#', 'HTML', 'CSS', 'JavaScript', 'PHP'],
+                        datasets: [{
+                            label: '2020 years students',
+                            data: [<?php echo $kint; ?>],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
                         }
-                    }]
-                }
-            }
-        });
-    </script>
+                    }
+                });
+            </script>
+        </div>
+
+        <!-- JG chart kodo pabaiga -->
+
+        <div class="col s6">
+
+        <h2 class="abouth2">Students total per year</h2>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+            <canvas id="myRadarChart" width="200" height="100"></canvas>
+            <script>
+                var ctx = document.getElementById('myRadarChart').getContext('2d');
+                var myRadarChart = new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Java', 'C#', 'HTML', 'CSS', 'JavaScript', 'PHP'],
+                        datasets: [{
+                            label: '2020 years total students',
+                            data: [<?php echo $kintCount; ?>],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+        </div>
+
+    </div>
 </div>
 
 
-<p>Pabaiga</p>
-<!-- JG chart kodo pabaiga -->
 
 <?php include "footer.php" ?>
