@@ -13,6 +13,7 @@
     box-sizing: border-box;
     height: 30px;
     position: relative;
+    vertical-align: middle;
 }
 
 .socialLinks{

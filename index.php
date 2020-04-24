@@ -23,7 +23,7 @@
     <a target="_blank" href="https://www.vilniuscoding.lt/">Need more details?</a>
     <br>
     <br>
-    <a href="#">Register now!</a>
+    <a href="registration.php">Register now!</a>
   </div>
 
   <div class="col s4">
@@ -33,7 +33,7 @@
     <a target="_blank" href="https://www.vilniuscoding.lt/">Need more details?</a>
     <br>
     <br>
-    <a href="#">Register now!</a>
+    <a href="registration.php">Register now!</a>
   </div>
 
   <div class="col s4">
@@ -43,7 +43,7 @@
     <a target="_blank" href="https://www.vilniuscoding.lt/">Need more details?</a>
     <br>
     <br>
-    <a href="#">Register now!</a>
+    <a href="registration.php">Register now!</a>
   </div>
 
 </div>
