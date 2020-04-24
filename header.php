@@ -16,9 +16,12 @@
 
 <body>
 
-    <nav class="blue darken-3 container">
+    <nav class="cyan accent-4 container">
         <div class="nav-wrapper text-blue-grey lighten-5">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#">
+					<img class="logo" src="images/logo.png">
+				</a>
+            
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.php">Home</a></li>

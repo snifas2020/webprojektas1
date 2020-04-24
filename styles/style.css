@@ -7,11 +7,30 @@
 /* Rimante stiliaus kodas: */
 .home{
     background:rgb(233, 226, 226);
+}
 
+.logo{
+    box-sizing: border-box;
+    height: 30px;
+    position: relative;
+}
+
+.socialLinks{
+box-sizing: border-box;
+}
+
+.socialLinks li img {
+width: 30px;
+}
+
+.follow{
+    box-sizing: border-box;
+    text-align: center;
+}
 
 /* JG css pradzia */ 
 
-}
+
 
 .aboutCh1Center {
     width: 70%;
