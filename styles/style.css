@@ -13,10 +13,17 @@
     box-sizing: border-box;
     height: 30px;
     position: relative;
+    vertical-align: middle;
 }
 
 .socialLinks{
 box-sizing: border-box;
+display: flex;
+justify-content: center;
+}
+
+.socialLinks li{
+    padding: 0 5px;
 }
 
 .socialLinks li img {
@@ -26,6 +33,14 @@ width: 30px;
 .follow{
     box-sizing: border-box;
     text-align: center;
+}
+
+.style{
+    overflow: hidden;
+}
+
+footer.style{
+    overflow: hidden;
 }
 
 /* JG css pradzia */ 
