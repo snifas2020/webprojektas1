@@ -27,19 +27,25 @@
 }
 
 .aboutCh2 {
-    width: 70%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .abouth2 {
-    text-align: center;
+    text-align: left;
     text-justify: auto;
 }
 
 .abouth1 {
     text-align: center;
     text-justify: auto;
+}
+
+.aboutCh3 {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* JG css pabaiga */
