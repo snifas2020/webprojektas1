@@ -80,13 +80,13 @@ footer.style{
 }
 
 .abouth2 {
-    text-align: left;
-    text-justify: auto;
+    font-size: 1vw;
+    text-align: center;
 }
 
 .abouth1 {
+    font-size: 1vw;
     text-align: center;
-    text-justify: auto;
 }
 
 .aboutCh3 {

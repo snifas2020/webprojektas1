@@ -60,6 +60,15 @@ $conn->close();
     <img src="https://picsum.photos/1000/100" alt="AboutMainPic01">
 </div>
 
+<div class="container">
+    <div class="row">
+    <li class="col s2"><a href="#myRadarChart">Contacts</a></li>
+    <li class="col s2"><a href="#myChart">Header</a></li>
+    <li class="col s2"><a href="registration.php">Registration</a></li>
+    </div>
+</div>
+
+
 <div class="aboutCh1Center">
     <h1 class="abouth1">BestCoding school statistics</h1>
 
