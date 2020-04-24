@@ -3,7 +3,7 @@
 
 <!-- Čia pagrindinio puslapio vidinė dalis -->
 
-<div class="container home">
+<div class="container home style">
 
 <div class="row">
 
