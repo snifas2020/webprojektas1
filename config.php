@@ -2,7 +2,7 @@
 session_start();
 $host = "localhost"; /* Host name */
 $user = "root"; /* User */
-$password = "Testas12"; /* Password */
+$password = ""; /* Password */
 $dbname = "projektas_1"; /* Database name */
 
 $con = mysqli_connect($host, $user, $password,$dbname);

@@ -8,7 +8,7 @@
 <div class="row">
 
   <div class="col s12">
-    <h3>Want to become a programmer? We are here to help you!</h3>
+    <h4>Want to become a programmer? We are here to help you!</h4>
   </div>
 
   <div class="col s12">
