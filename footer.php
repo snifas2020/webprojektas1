@@ -3,7 +3,7 @@
     <footer class="page-footer container deep-orange darken-4 style">
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
+          <div class="col l6 m12 s12">
             <h5 class="white-text">Contact Us:</h5>
             <p class="grey-text text-lighten-4">webprojektas1@nesakysiu.com</p>
             <p>+37066625696</p>
