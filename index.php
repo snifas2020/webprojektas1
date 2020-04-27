@@ -7,11 +7,11 @@
 
 <div class="row">
 
-  <div class="col s12">
+  <div class="col s12 m12 l12">
     <h4>Want to become a programmer? We are here to help you!</h4>
   </div>
 
-  <div class="col s12">
+  <div class="col s12 l12 m12">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, quia, unde nam est harum earum temporibus quam, placeat similique laudantium eius repellendus. Optio porro doloribus blanditiis alias exercitationem aspernatur provident.</p>
   </div>
 
