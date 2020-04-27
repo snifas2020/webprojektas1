@@ -1,6 +1,6 @@
     <!-- Čia pasikartojanti visuose puslapiuose apatinė dalis -->
 
-    <footer class="page-footer container cyan accent-4 style">
+    <footer class="page-footer container deep-orange darken-4 style">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
