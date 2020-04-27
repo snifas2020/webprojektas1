@@ -57,7 +57,7 @@ $conn->close();
 
 
 <div class="aboutImgTop1">
-    <img src="https://picsum.photos/1000/100" alt="AboutMainPic01">
+    <img src="https://picsum.photos/2000/100" alt="AboutMainPic01">
 </div>
 
 <div class="container">
