@@ -4,8 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <h5 class="white-text">Contact Us:</h5>
+            <p class="grey-text text-lighten-4">webprojektas1@nesakysiu.com</p>
+            <p>+37066625696</p>
           </div>
           <div class="col l4 offset-l2 s12 follow">
             <h5 class="white-text">Follow us on:</h5>
